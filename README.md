@@ -4,4 +4,4 @@
 **Codes Type**
 - GCD
 - Linked List(All)
-
+- Stack

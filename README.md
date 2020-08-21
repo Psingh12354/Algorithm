@@ -8,4 +8,4 @@
 - Frequency Count
 - Power
 
-(https://github.com/Psingh12354/Algorithm)[Click me]
+(Click me)[https://github.com/Psingh12354/Algorithm]

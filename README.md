@@ -5,3 +5,5 @@
 - GCD
 - Linked List(All)
 - Stack
+- Frequency Count
+- Power

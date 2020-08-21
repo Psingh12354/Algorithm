@@ -7,3 +7,5 @@
 - Stack
 - Frequency Count
 - Power
+
+(Click)[https://github.com/Psingh12354/Algorithm] me

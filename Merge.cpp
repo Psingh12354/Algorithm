@@ -8,25 +8,17 @@ void merge(int *arr, int low, int high, int mid)
     j = mid + 1;
     while (i <= mid && j <= high) {
         if (arr[i] < arr[j]) {
-            c[k] = arr[i];
-            k++;
-            i++;
+            c[k++] = arr[i++];
         }
         else  {
-            c[k] = arr[j];
-            k++;
-            j++;
+            c[k++] = arr[j++];
         }
     }
     while (i <= mid) {
-        c[k] = arr[i];
-        k++;
-        i++;
+        c[k++] = arr[i++];
     }
     while (j <= high) {
-        c[k] = arr[j];
-        k++;
-        j++;
+        c[k++] = arr[j++];
     }
     for (i = low; i < k; i++)  {
         arr[i] = c[i];
@@ -58,5 +50,5 @@ int main()
     {
         cout<<myarray[i]<<" ";
     }
-	return 0;
+return 0;
 }

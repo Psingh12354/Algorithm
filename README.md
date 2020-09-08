@@ -7,5 +7,6 @@
 - Stack
 - Frequency Count
 - Power
+- Sorting
 
 (Click me)[https://github.com/Psingh12354/Algorithm]

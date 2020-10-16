@@ -5,10 +5,10 @@ int maximum(int p,int q){
 }
 int LCS(char *x,char *y,int m,int n)
 {	
-	int X[m+1][n+1],i,j;
-	for(i=0;i<=m;i++)
+	int X[m+1][n+1];
+	for(int i=0;i<=m;i++)
 	{
-		for(j=0;j<=n;j++)
+		for(int j=0;j<=n;j++)
 		{
 			if(i==0 or j==0)
 			{
@@ -25,7 +25,32 @@ int LCS(char *x,char *y,int m,int n)
 			}
 		}
 	}
+	int index=X[m][n];
+	char LCS[index+1];
+	LCS[index]='\0';
+	int i=m,j=n;
+	while(i>0 && j>0)
+	{
+		if(x[i-1]==y[j-1])
+		{
+			LCS[index-1]=x[i-1];
+			i--;
+			j--;
+			index--;
+		}
+		else
+		if(X[i-1][j]>X[i][j-1])
+		{
+			i--;
+		}
+		else
+		{
+			j--;
+		}
+	}
+	cout<<"\nLCS String is : "<<LCS<<"\n";
 	return X[m][n];
+	
 }
 int main(){
 	int p,q;
